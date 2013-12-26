@@ -1,5 +1,5 @@
 ---
-  tags: mass assignment, tdd, metaprogramming
+  tags: todo, mass assignment, tdd, metaprogramming
   languages: ruby
 ---
 
