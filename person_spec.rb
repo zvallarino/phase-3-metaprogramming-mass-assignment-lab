@@ -1,8 +1,3 @@
-# Create a Person class that can take an arbitrary amount of
-# properties on initialization through a hash.
-
-# Each key in the attributes hash will be a property 
-
 RSpec.configure do |config|
   # Use color in STDOUT
   config.color_enabled = true
