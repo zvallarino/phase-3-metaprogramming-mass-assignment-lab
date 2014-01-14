@@ -34,8 +34,6 @@ describe Person do
       :height => "medium",
       :weight => "good",
       :handed => "righty",
-      :city => "New York",
-      :dog_or_cat_person => "Dog, duh"
     }
   }
 
@@ -66,8 +64,6 @@ describe Person do
       expect(spencer.height).to eq(spencer_attributes[:height])
       expect(spencer.weight).to eq(spencer_attributes[:weight])
       expect(spencer.handed).to eq(spencer_attributes[:handed])
-      expect(spencer.city).to eq(spencer_attributes[:city])
-      expect(spencer.dog_or_cat_person).to eq(spencer_attributes[:dog_or_cat_person])
     end
   end
 
