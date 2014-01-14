@@ -8,37 +8,41 @@ require 'spec_helper'
 describe Person do
 
   let(:avi_attributes) {
-    :name => "Avi",
-    :birthday => "01/29/1984",
-    :hair_color => "brown",
-    :eye_color => "brown",
-    :height => "short",
-    :weight => "good",
-    :handed => "lefty",
-    :complexion => "decent",
-    :t_shirt_size => "medium",
-    :wrist_size => "small",
-    :glove_size => "normal",
-    :pant_length => "32",
-    :pant_width => "32"
+    {
+      :name => "Avi",
+      :birthday => "01/29/1984",
+      :hair_color => "brown",
+      :eye_color => "brown",
+      :height => "short",
+      :weight => "good",
+      :handed => "lefty",
+      :complexion => "decent",
+      :t_shirt_size => "medium",
+      :wrist_size => "small",
+      :glove_size => "normal",
+      :pant_length => "32",
+      :pant_width => "32"
+    }
   }
 
   let(:avi) { Person.new(avi_attributes) }
 
   let(:spencer_attributes) {
-    :name => "Spencer",
-    :hair_color => "N/A",
-    :height => "medium",
-    :weight => "good",
-    :handed => "righty",
-    :city => "New York",
-    :dog_or_cat_person => "Dog, duh"
+    {
+      :name => "Spencer",
+      :hair_color => "N/A",
+      :height => "medium",
+      :weight => "good",
+      :handed => "righty",
+      :city => "New York",
+      :dog_or_cat_person => "Dog, duh"
+    }
   }
 
   let(:spencer) { Person.new(spencer_attributes)}
 
   context 'a longer list of attributes' do
-    it 'will assign an arbitrary number of properties on initialization'
+    it 'will assign an arbitrary number of properties on initialization' do
       expect(avi.name).to eq(avi_attributes[:name])
       expect(avi.birthday).to eq(avi_attributes[:birthday])
       expect(avi.hair_color).to eq(avi_attributes[:hair_color])
@@ -56,7 +60,7 @@ describe Person do
   end
 
   context 'a different, shorter list of attributes' do
-    it 'will also assign an arbitrary number of properties on initialization'
+    it 'will also assign an arbitrary number of properties on initialization' do
       expect(spencer.name).to eq(spencer_attributes[:name])
       expect(spencer.hair_color).to eq(spencer_attributes[:hair_color])
       expect(spencer.height).to eq(spencer_attributes[:height])
@@ -68,4 +72,3 @@ describe Person do
   end
 
 end
-
