@@ -1,9 +1,11 @@
 ---
-  tags: todo, mass assignment, metaprogramming
+  tags: todo, mass assignment, metaprogramming, oop
   languages: ruby
 ---
 
 # Mass Assignment
+
+### Skills: Mass Assignment, Metaprogramming, Classes, Hashes
 
 ## Instructions
 
