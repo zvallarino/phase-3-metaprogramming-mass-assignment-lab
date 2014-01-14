@@ -35,5 +35,5 @@ describe "Person", "Mass Assignment" do
     p.pant_width.should eq(attributes[:pant_width])
   end
 
-
 end
+
