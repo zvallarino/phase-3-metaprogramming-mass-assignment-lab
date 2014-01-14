@@ -5,6 +5,8 @@
 
 # Mass Assignment
 
-In person_spec.rb, create a Person class that can take an arbitrary amount of properties on initialization through a hash.
+## Instructions
 
-Each key in the attributes hash will be a property 
+Create a Person class that can take an arbitrary number of properties on initialization through a hash.
+
+Each key in the attributes hash will become a property of an initialized Person instance.
