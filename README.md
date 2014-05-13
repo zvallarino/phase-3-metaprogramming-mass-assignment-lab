@@ -1,6 +1,7 @@
 ---
   tags: todo, mass assignment, metaprogramming, oop
   languages: ruby
+  resources: 1
 ---
 
 # Mass Assignment
@@ -34,3 +35,5 @@ Each key in the attributes hash will become a property of an initialized Person 
   susan.height    # => "5'11""
   susan.eye_color # => "Green"
   ```
+## Resources
+* [RubyMonk](http://rubymonk.com/) - [Chapter 32: Introduction to Metaprogramming](http://rubymonk.com/learning/books/2-metaprogramming-ruby/chapters/32-introduction-to-metaprogramming/)
