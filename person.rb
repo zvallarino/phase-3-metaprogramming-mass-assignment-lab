@@ -1,1 +1,3 @@
-# Write your code here
+class Person
+  # code here
+end
