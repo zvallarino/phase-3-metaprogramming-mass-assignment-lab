@@ -1,8 +1,4 @@
----
-  tags: todo, mass assignment, metaprogramming, oop
-  languages: ruby
-  resources: 1
----
+
 
 # Mass Assignment
 
