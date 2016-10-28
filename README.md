@@ -41,8 +41,6 @@ susan.eye_color # => "Green"
 
 ## Resources
 
-* [RubyMonk](http://rubymonk.com/) - [Chapter 32: Introduction to Metaprogramming](http://rubymonk.com/learning/books/2-metaprogramming-ruby/chapters/32-introduction-to-metaprogramming/)
-
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/mass-assignment' title='Mass Assignment'>Mass Assignment</a> on Learn.co and start learning to code for free.</p>
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/mass-assignment'>Mass Assignment Lab</a> on Learn.co and start learning to code for free.</p>
