@@ -22,11 +22,10 @@ allowable properties:
   ex:
 
 ```ruby
-bob_attributes = {name: "Bob", age: 27, hair_color: "Brown"}
+bob_attributes = {name: "Bob", hair_color: "Brown"}
 
 bob = Person.new(bob_attributes)
 bob.name       # => "Bob"
-bob.age        # => 27
 bob.hair_color # => "Brown"
 
 susan_attributes = {name: "Susan", height: "5'11\"", eye_color: "Green"}
