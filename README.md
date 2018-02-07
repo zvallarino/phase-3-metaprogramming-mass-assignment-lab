@@ -38,8 +38,6 @@ susan.eye_color # => "Green"
 
 * Your initialize method should use iteration and the `.send` method to mass assign the value of each key/value pair to its associated key (i.e. method). Refer to the previous reading to help you solve this one.
 
-## Resources
-
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/mass-assignment' title='Mass Assignment'>Mass Assignment</a> on Learn.co and start learning to code for free.</p>
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/mass-assignment'>Mass Assignment Lab</a> on Learn.co and start learning to code for free.</p>
