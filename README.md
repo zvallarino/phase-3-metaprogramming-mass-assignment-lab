@@ -1,9 +1,9 @@
-# Mass Assignment
+# Mass Assignment Lab
 
-## Objectives
+## Learning Goals
 
-1. Use keyword arguments to define an initialize method.
-2. Use mass assignment to metaprogram an initialize method. 
+- Use keyword arguments to define an initialize method
+- Use mass assignment to metaprogram an initialize method
 
 ## Instructions
 
@@ -37,7 +37,3 @@ susan.eye_color # => "Green"
 ```
 
 * Your initialize method should use iteration and the `.send` method to mass assign the value of each key/value pair to its associated key (i.e. method). Refer to the previous reading to help you solve this one.
-
-
-
-
