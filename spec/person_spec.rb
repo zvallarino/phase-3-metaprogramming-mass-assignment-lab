@@ -1,44 +1,26 @@
-# If you write a describe block without quotes like this, you need to define
-# the described class (or method) for the tests to even run. It's sort of a
-# freebie test to make sure you've actually defined the models you plan on
-# testing.
-
 describe Person do
+  
+  context 'with a longer list of attributes' do
+    let(:avi_attributes) do
+      {
+        name: "Avi",
+        birthday: "01/29/1984",
+        hair_color: "brown",
+        eye_color: "brown",
+        height: "short",
+        weight: "good",
+        handed: "lefty",
+        complexion: "decent",
+        t_shirt_size: "medium",
+        wrist_size: "small",
+        glove_size: "normal",
+        pant_length: "32",
+        pant_width: "32"
+      }
+    end
 
-  let(:avi_attributes) {
-    {
-      :name => "Avi",
-      :birthday => "01/29/1984",
-      :hair_color => "brown",
-      :eye_color => "brown",
-      :height => "short",
-      :weight => "good",
-      :handed => "lefty",
-      :complexion => "decent",
-      :t_shirt_size => "medium",
-      :wrist_size => "small",
-      :glove_size => "normal",
-      :pant_length => "32",
-      :pant_width => "32"
-    }
-  }
-
-  let(:avi) { Person.new(avi_attributes) }
-
-  let(:spencer_attributes) {
-    {
-      :name => "Spencer",
-      :hair_color => "N/A",
-      :height => "medium",
-      :weight => "good",
-      :handed => "righty",
-    }
-  }
-
-  let(:spencer) { Person.new(spencer_attributes)}
-
-  context 'a longer list of attributes' do
     it 'will assign an arbitrary number of properties on initialization' do
+      avi = Person.new(avi_attributes)
       expect(avi.name).to eq(avi_attributes[:name])
       expect(avi.birthday).to eq(avi_attributes[:birthday])
       expect(avi.hair_color).to eq(avi_attributes[:hair_color])
@@ -55,8 +37,19 @@ describe Person do
     end
   end
 
-  context 'a different, shorter list of attributes' do
+  context 'with a different, shorter list of attributes' do
+    let(:spencer_attributes) do
+      {
+        name: "Spencer",
+        hair_color: "N/A",
+        height: "medium",
+        weight: "good",
+        handed: "righty"
+      }
+    end
+
     it 'will also assign an arbitrary number of properties on initialization' do
+      spencer = Person.new(spencer_attributes)
       expect(spencer.name).to eq(spencer_attributes[:name])
       expect(spencer.hair_color).to eq(spencer_attributes[:hair_color])
       expect(spencer.height).to eq(spencer_attributes[:height])
